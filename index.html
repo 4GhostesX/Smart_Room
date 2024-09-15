@@ -6,16 +6,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
-	<script src="script.js"></script>
-	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- CSS file -->
 </head>
 <body>
 	<div class="wrapper">	
 		<!-- LED 1 -->
 		<div class="progress">
 			<a class="icon1">
-				<img src="Photos/outlet_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Light icon" width="100" height="100">
+				<img src="Photos/outlet_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Light icon" width="100" height="100"> <!-- Image file -->
 			</a>
 			<div class="toggle-btn" id="unact">
 				<div class="inner-circle"></div>
@@ -28,7 +26,7 @@
 		<!-- LED 2 -->
 		<div class="progress">
 			<a class="icon1">
-				<img src="Photos/outlet_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Light icon" width="100" height="100">
+				<img src="Photos/outlet_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Light icon" width="100" height="100"> <!-- Image file -->
 			</a>
 			<div class="toggle-btn1" id="unact1">
 				<div class="inner-circle"></div>
@@ -41,7 +39,7 @@
 		<!-- LED 3 / Fan -->
 		<div class="progress">
 			<a class="icon1">
-				<img src="Photos/mode_fan_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Fan icon" width="100" height="100">
+				<img src="Photos/mode_fan_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Fan icon" width="100" height="100"> <!-- Image file -->
 			</a>
 			<div class="toggle-btn2" id="unact2">
 				<div class="inner-circle"></div>
@@ -54,7 +52,7 @@
 		<!-- LED 4 -->
 		<div class="progress">
 			<a class="icon1">
-				<img src="Photos/light_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Light icon" width="100" height="100">
+				<img src="Photos/light_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Light icon" width="100" height="100"> <!-- Image file -->
 			</a>
 			<div class="toggle-btn3" id="unact3">
 				<div class="inner-circle"></div>
@@ -69,7 +67,7 @@
 		<!-- Temperature Display -->
 		<div class="places">
 			<a class="icon2">
-				<img src="Photos/computer-icons-thermometer-temperature-business-celsius-glass-roof-(2).png" alt="Temperature icon" width="200" height="200">
+				<img src="Photos/computer-icons-thermometer-temperature-business-celsius-glass-roof-(2).png" alt="Temperature icon" width="200" height="200"> <!-- Image file -->
 			</a>
 			<span class="temp">Temperature:</span>	
 		</div>
@@ -77,23 +75,25 @@
 		<!-- Humidity Display -->
 		<div class="places">
 			<a class="icon2">
-				<img src="Photos/humidity-icon-flat-style-climate-260nw-1359881705.png" alt="Humidity icon" width="200" height="200">
+				<img src="Photos/humidity-icon-flat-style-climate-260nw-1359881705.png" alt="Humidity icon" width="200" height="200"> <!-- Image file -->
 			</a>
 			<span class="humidity">Humidity:</span>	
 		</div>
 
 		<!-- Fan Control -->
-         <div class="places">
-             <a class="icon2">
-                <img src="Photos/3141930-200.png" alt="Fan icon" width="150" height="150">
-             </a>
+        <div class="places">
+            <a class="icon2">
+                <img src="Photos/3141930-200.png" alt="Fan icon" width="150" height="150"> <!-- Image file -->
+            </a>
             <span class="fan-speed">Fan Speed: <span id="fanPercentage">0%</span></span>
-             <div class="button-container">
-            <span class="button">-</span>
-            <span class="button1">+</span>
-         </div>
-    </div>
+            <div class="button-container">
+                <span class="button">-</span>
+                <span class="button1">+</span>
+            </div>
+        </div>
 
-</div>
+	</div>
+
+	<script src="script.js"></script> <!-- JavaScript file -->
 </body>
 </html>
