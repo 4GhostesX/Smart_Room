@@ -1,6 +1,8 @@
 body {
     text-align: center;
     background: #031321;
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scrollbars on the login overlay */
 }
 
 .wrapper {
@@ -112,6 +114,49 @@ body {
 }
 
 .button:hover, .button1:hover {
+    background: rgb(0, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 255, 255), 0 0 40px rgb(0, 255, 255), 0 0 80px rgb(0, 255, 255);
+}
+
+/* Styling for the password overlay */
+#login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8); /* Darker overlay */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#login div {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9); /* Slightly darker background for the prompt */
+    border-radius: 10px;
+}
+
+#login p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#login button {
+    font-size: 20px;
+    color: #ffffff;
+    background: rgb(60, 60, 60);  /* Match the toggle buttons */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+#login button:hover {
     background: rgb(0, 255, 255);
     box-shadow: 0 0 10px rgb(0, 255, 255), 0 0 40px rgb(0, 255, 255), 0 0 80px rgb(0, 255, 255);
 }
