@@ -1,5 +1,5 @@
 /* General Styles */
-body {
+.body {
     text-align: center;
     background: #031321;
     margin: 0; /* Remove default margin */
@@ -198,8 +198,6 @@ body {
     background: rgb(0, 255, 255);
     box-shadow: 0 0 10px rgb(0, 255, 255), 0 0 40px rgb(0, 255, 255), 0 0 80px rgb(0, 255, 255);
 }
-
-/* Style for error message */
 /* Style for error message */
 #error-message {
     color: #ff4d4d; /* Bright red */
@@ -215,7 +213,6 @@ body {
         0 0 5px #ff4d4d, 0 0 10px #ff4d4d; /* Glow */
     animation: shake 0.5s; /* Shake animation */
 }
-
 /* Shake animation */
 @keyframes shake {
     0% { transform: translateX(0); }
@@ -225,20 +222,15 @@ body {
     80% { transform: translateX(10px); }
     100% { transform: translateX(0); }
 }
-
 .shake {
     animation: shake 0.5s;
 }
-
 /* Ensure button glow appears below error */
 #login button {
     position: relative;
     z-index: 1; /* Button stays above background but below error shadow */
     margin-top: 40px; /* Space between error message and button */
 }
-
-
-
 
 /* Responsive Adjustments (Optional) */
 @media (max-width: 768px) {
